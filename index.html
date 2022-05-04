@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Sells App</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="buttonsToggle">
+            <button id="registerButton">Register</button>
+            <button id="dashboardButton">Dashboard View</button>
+        </div>
+        <div id="dashboardView">
+            <div>
+                <h2>Lista de proveedores</h2>
+                <div id="providerList"></div>
+            </div>
+        </div>
+        <div id="dashboardRegister" class="hide">
+            <div id="supplisForm" class="container">
+                <h2>Insumos</h2>
+                <form action="">
+                    <label for="">
+                        <input type="text" id="supplesItem">
+                    </label>
+                    <button id="suppliesSubmit">Guardar</button>
+                    <div id="suppliesDataErrors" class="provider-data-errors"></div>
+                </form>
+            </div>
+            
+            <div id="providersForm" class="container">
+                <h2>Proveedores</h2>
+                <form action="" class="provider-form">
+                    <label for="">
+                        <span class="provider-form-label">Company Name</span>
+                        <input type="text" id="providerCompanyName" required>
+                    </label>
+                    <label for="">
+                        <span class="provider-form-label">
+                            NIT
+                        </span>
+                        <input type="text" id="providerNit" required>
+                    </label>
+                    <label for="">
+                        <span class="provider-form-label">City</span>
+                        <input type="text" id="providerCity" required>
+                    </label>
+                    <label for="">
+                        <span class="provider-form-label">Address</span>
+                        <input type="text" id="providerAddress" required>
+                    </label>
+                    <button id="providerSubmit">Save</button>
+                </form>
+                <div id="providerDataErrors" class="provider-data-errors"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>

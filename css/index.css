@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 9rem;
+    margin-top: 2rem;
+}
+
+.provider-form input {
+    padding: .35rem;
+}
+
+.heading {
+    width: 100%;
+}
+
+/* .show {
+    
+} */
+
+.providers-table {
+    border-collapse: separate;
+    border-spacing: 2rem;
+}
+
+.hide {
+    opacity: 0;
+    position: absolute;
+}
+
+/* .provider-form-label {
+    display: block;
+} */
